@@ -17,7 +17,6 @@ const CollaborativeEditor = ({ roomName, languageSupport, userName }) => {
 
     const [tabIndex, setTabIndex] = useState(0);
     const [tabs, setTabs] = useState([]);
-    const [editingTabIndex, setEditingTabIndex] = useState(null);
 
     const ydocRef = useRef(null);
     const providerRef = useRef(null);

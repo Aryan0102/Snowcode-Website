@@ -4,7 +4,6 @@ import { languages } from '@codemirror/language-data';
 import Select from 'react-select'
 
 const App = () => {
-  const [mode, setMode] = useState(null);
   const [roomCode, setRoomCode] = useState('');
   const [joined, setJoined] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
@@ -92,7 +91,6 @@ const App = () => {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <button
               onClick={() => {
-                setMode('create');
                 handleCreate();
               }}
               className="bg-[#e94560] text-white py-2 rounded"
@@ -128,7 +126,6 @@ const App = () => {
             />
           </div>
         </div>
-
       ) : (
         <div className="w-full p-4">
           <CollaborativeEditor
