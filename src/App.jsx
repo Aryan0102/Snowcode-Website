@@ -115,16 +115,6 @@ const App = () => {
               </button>
             </div>
           </div>
-
-          {/* Footer */}
-          <div className="mt-8 w-full bg-[#e94560] text-white py-2 rounded flex items-center justify-center gap-2 cursor-pointer">
-            <p>Like Snowcode? VSCode Extension</p>
-            <img
-              className="w-6 h-6"
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
-              alt="VSCode"
-            />
-          </div>
         </div>
       ) : (
         <div className="w-full p-4">
